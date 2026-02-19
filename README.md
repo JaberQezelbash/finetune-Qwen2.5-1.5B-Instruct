@@ -82,10 +82,11 @@ During training, the script:
 
 ```text
 .
-├── finetune_qwen25_medqa_cpu.py          # Main CPU-only LoRA fine-tuning script
-├── notebooks/
-│   └── inference_and_eval.ipynb          # testing + comparison + quick ROUGE-L checks
+├── codes/
+│   ├── finetune_qwen25_medqa_cpu.py          # Main CPU-only LoRA fine-tuning script
+│   └── inference_and_eval.ipynb              # testing + comparison + quick ROUGE-L checks
 ├── assets/
-│   ├── configurations.md                 # experiment notes / hyperparameters
-├── requirements.txt                      # Pinned dependencies
+│   └── configurations.md                     # Experiment notes / hyperparameters
+├── requirements.txt                          # Pinned dependencies
 └── README.md
+
