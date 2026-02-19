@@ -100,6 +100,9 @@ Quick links:
 
 
 
+
+
+
 ## Dataset Format
 Your CSV file contains:
 
@@ -107,19 +110,12 @@ Your CSV file contains:
 - `Question`
 - `Answer`
 
-Example:
-
-```csv
-qtype,Question,Answer
-general,What is hypertension?,Hypertension is high blood pressure...
-treatment,How is type 2 diabetes commonly treated?,Treatment often includes lifestyle changes...
-```
-
 Notes:
 - Rows with empty `Question` or `Answer` are dropped.
 - `qtype` is used (when provided) to add lightweight context to the user prompt.
 
----
+
+
 
 ## Installation & Requirements
 
