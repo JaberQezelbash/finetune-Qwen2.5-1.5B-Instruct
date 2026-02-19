@@ -35,10 +35,10 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 8. [Inference & Testing](#inference--testing)  
 9. [Evaluation & Sanity Checks](#evaluation--sanity-checks)  
 10. [Configuration & CLI Arguments](#configuration--cli-arguments)  
-11. [Troubleshooting](#troubleshooting)  
-12. [Safety Notes](#safety-notes)  
-13. [Citation](#citation)  
-14. [Contact](#contact)  
+% 11. [Troubleshooting](#troubleshooting)  
+% 12. [Safety Notes](#safety-notes)  
+% 13. [Citation](#citation)  
+% 14. [Contact](#contact)  
 15. [Author’s Note](#authors-note)
 
 
