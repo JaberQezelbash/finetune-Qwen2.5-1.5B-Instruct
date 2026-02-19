@@ -28,7 +28,7 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 1. [Project Overview](#project-overview)  
 2. [Key Features](#key-features)  
 3. [Repository Structure](#repository-structure)  
-4. [Dataset](#dataset-format)  
+4. [Dataset](#dataset)  
 5. [Requirements](Requirements)  
 6. [Training](codes/finetune_qwen25_medqa_cpu.ipynb)  
 7. [Inference & Testing](codes/inference_and_eval.ipynb)  
@@ -81,11 +81,11 @@ During training, the script:
 ```text
 .
 ├── codes/
-│   ├── finetune_qwen25_medqa_cpu.ipynb       # Main CPU-only LoRA fine-tuning script
+│   ├── finetune_qwen25_medqa_cpu.ipynb       # main CPU-only LoRA fine-tuning script
 │   └── inference_and_eval.ipynb              # testing + comparison + quick ROUGE-L checks
 ├── assets/
-│   └── configurations.md                     # Experiment notes / hyperparameters
-├── requirements.txt                          # Pinned dependencies
+│   ├── configurations.md                     # experiment notes / hyperparameters
+│   └── requirements.txt                      # pinned dependencies
 └── README.md
 ```
 
@@ -98,7 +98,7 @@ Quick links:
 
 
 
-## Dataset Format
+## Dataset
 The CSV file, publicly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset), contains:
 - `qtype`
 - `Question`
