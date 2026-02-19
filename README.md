@@ -30,8 +30,8 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 3. [Repository Structure](#repository-structure)  
 4. [Dataset Format](#dataset-format)  
 5. [Requirements](Requirements)  
-6. [Training](#training)  
-7. [Inference & Testing](#inference--testing)  
+6. [Training](codes/finetune_qwen25_medqa_cpu.ipynb)  
+7. [Inference & Testing](codes/inference_and_eval.ipynb)  
 8. [Evaluation & Sanity Checks](#evaluation--sanity-checks)  
 9. [Configuration](assets/configurations.md)  
 10. [Author’s Note](#authors-note)
@@ -118,47 +118,6 @@ accelerate>=0.26.0
 pandas>=2.0.0
 packaging>=23.0
 ```
-
-
-
-## Training
-**Notebook:** [`codes/finetune_qwen25_medqa_cpu.ipynb`](codes/finetune_qwen25_medqa_cpu.ipynb)
-
-### Steps
-1. Download the dataset CSV from Kaggle (or use your own CSV with the same columns).
-2. Open `codes/finetune_qwen25_medqa_cpu.ipynb`.
-3. Update the notebook configuration variables (paths + output directory), for example:
-   - `DATA_PATH` (path to `Medical_QA_Dataset.csv`)
-   - `MODEL_NAME` (default: `Qwen/Qwen2.5-1.5B-Instruct`)
-   - `OUTPUT_DIR` (where results will be saved)
-4. Run all cells to:
-   - load/clean/split data,
-   - tokenize using the model chat template,
-   - apply LoRA adapters,
-   - fine-tune on CPU, and
-   - save the resulting adapter.
-
-> Tip: CPU fine-tuning is slow by nature. Smoke tests are the best way to confirm everything works before running longer training.
-
-
-
-## Inference & Testing
-**Notebook:** [`codes/inference_and_eval.ipynb`](codes/inference_and_eval.ipynb)
-
-This notebook loads:
-- the base model (`Qwen2.5-1.5B-Instruct`), plus  
-- your saved adapter from `adapter/`,  
-
-then runs:
-- quick manual Q&A tests,
-- optional base-vs-fine-tuned comparisons (adapter OFF vs ON), and
-- a small CPU-friendly overfitting sanity check.
-
-Typical steps:
-1. Set `ADAPTER_DIR` to your saved adapter path, e.g.:
-   - `./qwen25_1p5b_medqa_lora_cpu/adapter`
-2. Run the notebook cells to generate sample answers and comparisons.
-
 
 ---
 
