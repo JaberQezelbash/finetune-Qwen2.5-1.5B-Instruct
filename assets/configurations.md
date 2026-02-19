@@ -70,7 +70,7 @@ This document summarizes the **core configurations, defaults, and practical tuni
 | DataLoader workers | `0` | `0–2` | Manual | `0` is most stable (especially on Windows). |
 | Pin memory | `False` | `False` | Keep | Primarily helpful for GPU pipelines. |
 
----
+
 
 ## TrainingArguments compatibility (Transformers-version robust)
 This repo is intentionally defensive against version drift:
