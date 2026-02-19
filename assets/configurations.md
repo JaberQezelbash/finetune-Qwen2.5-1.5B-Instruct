@@ -2,7 +2,7 @@
 
 This document summarizes the **core configurations, defaults, and practical tuning knobs** used in this repository for **CPU-only LoRA fine-tuning** of `Qwen/Qwen2.5-1.5B-Instruct` on a **Medical Q&A** CSV dataset.
 
-> Note: Ranges below are recommended experimentation ranges for this setup. Your best values depend on dataset size/quality and your CPU/RAM.
+> Note: Ranges below are recommended experimentation ranges for this specific setup.
 
 ---
 
