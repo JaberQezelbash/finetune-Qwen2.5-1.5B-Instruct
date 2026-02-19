@@ -99,7 +99,7 @@ Quick links:
 
 
 ## Dataset Format
-The CSV file, publickly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset), contains:
+The CSV file, publicly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset), contains:
 - `qtype`
 - `Question`
 - `Answer`
