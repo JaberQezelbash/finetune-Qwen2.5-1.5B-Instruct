@@ -20,7 +20,8 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 - preserves **chat/instruction formatting** via the model’s chat template, and
 - includes quick checks to ensure the model is behaving as intended (sanity tests, base-vs-finetuned comparison, and a simple overfitting indicator).
 
----
+
+
 
 ## Table of Contents
 1. [Project Overview](#project-overview)  
@@ -39,7 +40,7 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 14. [Contact](#contact)  
 15. [Author’s Note](#authors-note)
 
----
+
 
 ## Project Overview
 This repo fine-tunes:
@@ -62,7 +63,8 @@ During training, the script:
 4. Applies LoRA to common attention/MLP projection layers (auto-detected).
 5. Saves the trained adapter and optionally merges it into the base model for a standalone checkpoint.
 
----
+
+
 
 ## Key Features
 ✅ **CPU-only training** (float32, no fp16/bf16)  
@@ -76,7 +78,8 @@ During training, the script:
 ✅ Optional **quick generation test** from the script  
 ✅ Includes a simple **base vs fine-tuned comparison** and a small **ROUGE-L overfitting sanity check** (CPU-friendly)
 
----
+
+
 
 ## Repository Structure
 A suggested structure (adapt as needed):
