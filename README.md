@@ -4,6 +4,7 @@
 <!-- Optional: add a banner/diagram here -->
 <!-- 
 <img width="900" alt="banner" src="https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/assets/banner.png">
+<img width="800" alt="kan_plot" src="https://github.com/JaberQezelbash/finetune-Qwen2.5-1.5B-Instruct/blob/main/assets/model.svg">
 -->
 
 This repository contains one of my end-to-end fine-tuning projects: adapting the LLM named *Qwen2.5-1.5B-Instruct* to better answer medical-style questions using a CPU-only LoRA approach. It includes a training script that is robust to common environment issues (especially Jupyter/IPykernel arguments and Transformers version differences), plus a lightweight inference/evaluation notebook-style workflow for testing the adapter after training.
