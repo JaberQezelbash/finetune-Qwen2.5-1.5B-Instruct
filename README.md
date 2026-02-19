@@ -28,13 +28,12 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 1. [Project Overview](#project-overview)  
 2. [Key Features](#key-features)  
 3. [Repository Structure](#repository-structure)  
-4. [Dataset Format](#dataset-format)  
+4. [Dataset](#dataset-format)  
 5. [Requirements](Requirements)  
 6. [Training](codes/finetune_qwen25_medqa_cpu.ipynb)  
 7. [Inference & Testing](codes/inference_and_eval.ipynb)  
-8. [Evaluation & Sanity Checks](#evaluation--sanity-checks)  
-9. [Configuration](assets/configurations.md)  
-10. [Author’s Note](#authors-note)
+8. [Configuration](assets/configurations.md)  
+9. [Author’s Note](#authors-note)
 
 
 
