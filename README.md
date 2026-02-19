@@ -88,14 +88,14 @@ During training, the script:
 │   └── configurations.md                     # Experiment notes / hyperparameters
 ├── requirements.txt                          # Pinned dependencies
 └── README.md
-
+```
 
 Quick links:
 - Training: [`codes/finetune_qwen25_medqa_cpu.ipynb`](codes/finetune_qwen25_medqa_cpu.ipynb)  
 - Inference/Eval: [`codes/inference_and_eval.ipynb`](codes/inference_and_eval.ipynb)  
 - Config tables: [`assets/configurations.md`](assets/configurations.md)  
 - Requirements: [`assets/requirements.txt`](assets/requirements.txt)  
-```
+
 
 
 
