@@ -15,7 +15,7 @@ It includes a training script that is robust to common environment issues (espec
 
 
 ## Motivation
-Medical Q&A is a high-impact domain where models must be **careful, consistent, and safety-aware**. However, full fine-tuning can be expensive and GPU-dependent. The goal of this project was to build a practical, reproducible pipeline that:
+Medical Q&A is a high-impact domain where models must be **careful, consistent, and precise**. However, full fine-tuning can be expensive and GPU-dependent. The goal of this project was to build a practical, reproducible pipeline that:
 - runs **without a GPU** (CPU-only),
 - uses **parameter-efficient fine-tuning** (LoRA) rather than updating all model weights,
 - preserves **chat/instruction formatting** via the model’s chat template, and
@@ -44,7 +44,7 @@ This repo fine-tunes:
 
 - **Base model:** `Qwen/Qwen2.5-1.5B-Instruct`  
 - **Method:** LoRA (PEFT adapters)  
-- **Hardware target:** CPU-only  
+- **Hardware target:** CPU-only with 8GB of RAM  
 - **Dataset:** `Medical_QA_Dataset.csv` (publickly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset)) with columns:  
   - `qtype`  
   - `Question`  
@@ -73,7 +73,7 @@ During training, the script:
 ✅ Saves adapter + tokenizer for easy reuse  
 ✅ Optional merge adapter into base model to create a standalone model  
 ✅ Optional quick generation test from the script  
-✅ Includes a simple base vs fine-tuned comparison and a small ROUGE-L overfitting sanity check (CPU-friendly)
+✅ Includes a simple base vs fine-tuned comparison and a small ROUGE-L overfitting sanity check
 
 
 
