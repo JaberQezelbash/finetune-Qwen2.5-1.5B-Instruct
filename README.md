@@ -6,10 +6,10 @@
 <img width="900" alt="banner" src="https://github.com/<YOUR_GITHUB_USERNAME>/<YOUR_REPO_NAME>/blob/main/assets/banner.png">
 -->
 
-This repository contains my first end-to-end **fine-tuning project**: adapting **Qwen/Qwen2.5-1.5B-Instruct** to better answer **medical-style questions** using a **CPU-only LoRA** approach.  
-It includes a training script that is robust to common environment issues (especially **Jupyter/IPykernel arguments** and **Transformers version differences**), plus a lightweight inference/evaluation notebook-style workflow for testing the adapter after training.
+This repository contains my first end-to-end fine-tuning project: adapting Qwen/Qwen2.5-1.5B-Instruct to better answer medical-style questions using a CPU-only LoRA approach.  
+It includes a training script that is robust to common environment issues (especially Jupyter/IPykernel arguments and Transformers version differences), plus a lightweight inference/evaluation notebook-style workflow for testing the adapter after training.
 
-> ⚠️ **Medical disclaimer:** This project is for research/education. The finetuned model is not a substitute for clinician judgment or emergency services.
+> ⚠️ Medical disclaimer: This project is for research/education. The finetuned model is not a substitute for clinician judgment or emergency services.
 
 ---
 
