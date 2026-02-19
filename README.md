@@ -107,24 +107,9 @@ The CSV file, publickly available on [Kaggle](https://www.kaggle.com/datasets/th
 
 
 
-## Installation & Requirements
-
-### 1) Create an environment (recommended)
-```bash
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
-```
-
-### Requirements
-Below is the full contents of `assets/requirements.txt`:
+## Requirements
 
 ```txt
-# Pinned requirements for CPU-only LoRA fine-tuning (Qwen2.5) and evaluation utilities.
-# If you already have a working environment, you may relax pins as needed.
-
 torch>=2.1.0
 transformers>=4.37.0
 datasets>=2.18.0
@@ -173,7 +158,6 @@ Typical steps:
 1. Set `ADAPTER_DIR` to your saved adapter path, e.g.:
    - `./qwen25_1p5b_medqa_lora_cpu/adapter`
 2. Run the notebook cells to generate sample answers and comparisons.
-
 
 
 ---
