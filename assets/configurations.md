@@ -135,13 +135,5 @@ A small-sample ROUGE-L F1 check is included (train vs eval) to catch obvious ove
 - If you want to maximize CPU throughput, you can set CPU threads (example shown in the inference/eval workflow):  
   `torch.set_num_threads(os.cpu_count())` (behavior varies by system).
 
----
 
-## Reproducibility Notes
-| **Aspect** | **What’s controlled** | **What may still vary** |
-|---|---|---|
-| Seeds | Python `random`, PyTorch, Transformers seed | Minor differences due to library/OS/thread scheduling. |
-| Version drift | Script filters unsupported kwargs | Outputs may still differ across Transformers/PEFT versions. |
-| Data order | Fixed seed split | Different CSV ordering/cleaning changes results. |
 
----
