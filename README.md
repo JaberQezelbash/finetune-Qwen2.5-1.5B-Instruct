@@ -11,7 +11,8 @@ It includes a training script that is robust to common environment issues (espec
 
 > ⚠️ Medical disclaimer: This project is for research/education. The finetuned model is not a substitute for clinician judgment or emergency services.
 
----
+
+
 
 ## Motivation
 Medical Q&A is a high-impact domain where models must be **careful, consistent, and safety-aware**. However, full fine-tuning can be expensive and GPU-dependent. The goal of this project was to build a practical, reproducible pipeline that:
