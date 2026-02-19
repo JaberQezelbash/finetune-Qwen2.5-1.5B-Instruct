@@ -83,7 +83,7 @@ During training, the script:
 ```text
 .
 ├── codes/
-│   ├── finetune_qwen25_medqa_cpu.py          # Main CPU-only LoRA fine-tuning script
+│   ├── finetune_qwen25_medqa_cpu.ipynb       # Main CPU-only LoRA fine-tuning script
 │   └── inference_and_eval.ipynb              # testing + comparison + quick ROUGE-L checks
 ├── assets/
 │   └── configurations.md                     # Experiment notes / hyperparameters
