@@ -19,7 +19,7 @@ This document summarizes the **core configurations, defaults, and practical tuni
 | System prompt | Safety-oriented medical assistant | — | Prompt iteration | Encourages educational content + clinician referral + emergency guidance. |
 | Loss focus | Answer-only loss (prompt masked) | — | Keep consistent | Prompt tokens are masked to `-100` so loss emphasizes assistant response. |
 
----
+
 
 ### B) Tokenization & sequence settings
 
@@ -30,7 +30,6 @@ This document summarizes the **core configurations, defaults, and practical tuni
 | Padding side | `right` | — | Keep consistent | Stable batching behavior for causal LM. |
 | Pad token | `eos_token` (if missing) | — | Keep consistent | Ensures tokenizer can pad even if pad token isn’t defined. |
 
----
 
 ### C) LoRA (PEFT) configuration
 
@@ -43,7 +42,7 @@ This document summarizes the **core configurations, defaults, and practical tuni
 | Task type | `"CAUSAL_LM"` | — | Keep | Matches instruction-tuned causal modeling. |
 | Target modules | Auto-detected (`q/k/v/o`, `up/down/gate`) | Manual override if needed | Inspect model | Script scans `torch.nn.Linear` layers for common projection names. |
 
----
+
 
 ### D) Optimization & training schedule (CPU-friendly defaults)
 
@@ -59,7 +58,7 @@ This document summarizes the **core configurations, defaults, and practical tuni
 | LR scheduler | `"cosine"` | `"linear", "cosine"` | Manual | Cosine often works well with LoRA; linear is a solid baseline. |
 | Optimizer | `"adamw_torch"` | `"adamw_torch"` | Keep | Reliable default in Transformers. |
 
----
+
 
 ### E) CPU execution & memory controls
 
@@ -82,7 +81,7 @@ This repo is intentionally defensive against version drift:
 | Output dir collision-safe saving | If output dir exists and is non-empty, a timestamped directory is created | Prevents accidental overwrites without requiring `overwrite_output_dir`. |
 | Jupyter-safe CLI parsing | Uses `parse_known_args()` and ignores unknown `-f kernel.json` args | Prevents crashes when running inside notebooks. |
 
----
+
 
 ## Inference / Generation Settings (Recommended)
 
@@ -92,7 +91,7 @@ This repo is intentionally defensive against version drift:
 | Sampling (demo) | `do_sample=True`, `temperature=0.7`, `top_p=0.9`, `repetition_penalty=1.05` | Interactive Q&A demos | More natural outputs, but less reproducible. |
 | Safety emphasis | Keep system prompt enabled | Medical domain | Encourages cautious, educational tone and referral to clinicians. |
 
----
+
 
 ## Output Artifacts & What They Contain
 
@@ -102,7 +101,7 @@ This repo is intentionally defensive against version drift:
 | Trainer logs/metrics | `<output_dir>/` | `trainer_state`, metrics JSON (depending on version) | During/after training. |
 | Merged checkpoint (optional) | `<output_dir>/merged_model/` | Full model weights with LoRA merged into base | Only with `--merge_model`. |
 
----
+
 
 ## Suggested Experiment Matrix (Quick Guide)
 
@@ -114,7 +113,7 @@ This repo is intentionally defensive against version drift:
 | Reduce overfitting | `--lora_dropout 0.1` and/or `--weight_decay 0.01` | Helps when train metrics improve but eval quality degrades. |
 | Handle longer answers | `--max_seq_len 768` (if RAM allows) | Reduces truncation of assistant responses. |
 
----
+
 
 ## Quick Overfitting / Sanity Check (Lightweight)
 A small-sample ROUGE-L F1 check is included (train vs eval) to catch obvious overfitting signals.
@@ -126,7 +125,7 @@ A small-sample ROUGE-L F1 check is included (train vs eval) to catch obvious ove
 
 > ROUGE is not a medical correctness metric—use it only as a quick signal and always review qualitative outputs.
 
----
+
 
 ## Computational Effort (Practical Notes)
 - **CPU-only LoRA** is significantly more accessible than full fine-tuning, but it can still be slow depending on CPU/RAM and dataset size.
