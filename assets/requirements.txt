@@ -1,0 +1,11 @@
+# requirements.txt
+# Pinned requirements for CPU-only LoRA fine-tuning (Qwen2.5) and evaluation utilities.
+# If you already have a working environment, you may relax pins as needed.
+
+torch>=2.1.0
+transformers>=4.37.0
+datasets>=2.18.0
+peft>=0.10.0
+accelerate>=0.26.0
+pandas>=2.0.0
+packaging>=23.0
