@@ -95,7 +95,8 @@ Quick links:
 - Inference/Eval: [`codes/inference_and_eval.ipynb`](codes/inference_and_eval.ipynb)  
 - Config tables: [`assets/configurations.md`](assets/configurations.md)  
 - Requirements: [`assets/requirements.txt`](assets/requirements.txt)  
-```
+.
+
 
 ---
 
