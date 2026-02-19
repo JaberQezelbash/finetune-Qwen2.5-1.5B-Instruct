@@ -52,7 +52,7 @@ This repo fine-tunes:
 
 During training, the script:
 1. Loads and cleans the CSV (drops empty rows, trims strings).
-2. Converts each example into a **chat-style conversation**:
+2. Converts each example into a chat-style conversation:
    - `system`: a safety-oriented instruction prompt  
    - `user`: the question (optionally with “Question type”)  
    - `assistant`: the answer  
@@ -64,22 +64,21 @@ During training, the script:
 
 
 ## Key Features
-✅ **CPU-only training** (float32, no fp16/bf16)  
-✅ **Jupyter/IPykernel compatible** (`parse_known_args` ignores `-f <kernel.json>`)  
-✅ **Robust across Transformers versions** (filters unsupported `TrainingArguments` kwargs)  
-✅ **Auto-detects LoRA target modules** (common projection layer names)  
-✅ **Chat-template training** using `tokenizer.apply_chat_template`  
-✅ **Prompt masking** so loss focuses on assistant responses  
-✅ **Saves adapter + tokenizer** for easy reuse  
-✅ Optional **merge adapter into base model** to create a standalone model  
-✅ Optional **quick generation test** from the script  
-✅ Includes a simple **base vs fine-tuned comparison** and a small **ROUGE-L overfitting sanity check** (CPU-friendly)
+✅ CPU-only training (float32, no fp16/bf16)  
+✅ Jupyter/IPykernel compatible (`parse_known_args` ignores `-f <kernel.json>`)  
+✅ Robust across Transformers versions (filters unsupported `TrainingArguments` kwargs)  
+✅ Auto-detects LoRA target modules (common projection layer names)  
+✅ Chat-template training using `tokenizer.apply_chat_template`  
+✅ Prompt masking so loss focuses on assistant responses  
+✅ Saves adapter + tokenizer for easy reuse  
+✅ Optional merge adapter into base model to create a standalone model  
+✅ Optional quick generation test from the script  
+✅ Includes a simple base vs fine-tuned comparison and a small ROUGE-L overfitting sanity check (CPU-friendly)
 
 
 
 
 ## Repository Structure
-A suggested structure (adapt as needed):
 
 ```text
 .
