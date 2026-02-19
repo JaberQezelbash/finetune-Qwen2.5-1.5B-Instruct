@@ -84,9 +84,8 @@ During training, the script:
 .
 ├── finetune_qwen25_medqa_cpu.py          # Main CPU-only LoRA fine-tuning script
 ├── notebooks/
-│   └── inference_and_eval.ipynb          # Optional: testing + comparison + quick ROUGE-L checks
+│   └── inference_and_eval.ipynb          # testing + comparison + quick ROUGE-L checks
 ├── assets/
-│   ├── configurations.md                 # Optional: experiment notes / hyperparameters
-│   └── banner.png                        # Optional: repo banner / diagram
-├── requirements.txt                      # Pinned dependencies (recommended)
+│   ├── configurations.md                 # experiment notes / hyperparameters
+├── requirements.txt                      # Pinned dependencies
 └── README.md
