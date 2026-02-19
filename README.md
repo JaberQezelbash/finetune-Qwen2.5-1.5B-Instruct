@@ -30,11 +30,10 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 4. [Dataset Format](#dataset-format)  
 5. [Requirements](Requirements)  
 6. [Training](#training)  
-7. [Outputs](#outputs)  
-8. [Inference & Testing](#inference--testing)  
-9. [Evaluation & Sanity Checks](#evaluation--sanity-checks)  
-10. [Configuration](assets/configurations.md)  
-11. [Author’s Note](#authors-note)
+7. [Inference & Testing](#inference--testing)  
+8. [Evaluation & Sanity Checks](#evaluation--sanity-checks)  
+9. [Configuration](assets/configurations.md)  
+10. [Author’s Note](#authors-note)
 
 
 
@@ -116,12 +115,6 @@ python -m venv .venv
 .venv\Scripts\activate
 # macOS/Linux:
 source .venv/bin/activate
-```
-
-### 2) Install dependencies
-Install directly from the repo file:
-```bash
-pip install -r assets/requirements.txt
 ```
 
 ### Requirements
