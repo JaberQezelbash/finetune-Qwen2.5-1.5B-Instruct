@@ -119,7 +119,7 @@ pandas>=2.0.0
 packaging>=23.0
 ```
 
----
+
 
 ## Author’s Note
 Thanks for checking out this project. My goal was to create a clean, reproducible, and practical pipeline demonstrating how to adapt an instruction-tuned LLM to a medical Q&A style using *LoRA*, even when limited to CPU-only resources.
