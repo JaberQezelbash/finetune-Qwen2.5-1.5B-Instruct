@@ -99,21 +99,11 @@ Quick links:
 
 
 
-
-
-
-
 ## Dataset Format
-Your CSV file contains:
-
-- `qtype` (optional category label; can be empty)
+The CSV file, publickly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset), contains:
+- `qtype`
 - `Question`
 - `Answer`
-
-Notes:
-- Rows with empty `Question` or `Answer` are dropped.
-- `qtype` is used (when provided) to add lightweight context to the user prompt.
-
 
 
 
