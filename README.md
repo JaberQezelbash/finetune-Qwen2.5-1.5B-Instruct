@@ -1,5 +1,5 @@
 # Finetune (Qwen2.5-1.5B-Instruct)
-**CPU-only LoRA fine-tuning of Qwen2.5-1.5B-Instruct on a Medical Q&A dataset**
+**CPU-only LoRA fine-tuning of [Qwen](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)2.5-1.5B-Instruct on a Medical Q&A dataset**
 
 <!-- Optional: add a banner/diagram here -->
 <!-- 
