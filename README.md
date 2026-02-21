@@ -101,8 +101,8 @@ Quick links:
 
 
 ## Dataset
-The CSV file, publicly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset), contains:
-- `qtype`
+The Q&A dataset is publicly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset). It contains the folllowing variables:
+- `Question Type`
 - `Question`
 - `Answer`
 
