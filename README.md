@@ -42,7 +42,7 @@ Medical Q&A is a high-impact domain where models must be **careful, consistent, 
 ## Project Overview
 This repo fine-tunes:
 
-- **Base model:** `Qwen/Qwen2.5-1.5B-Instruct`  
+- **Base model:** `[Qwen](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)/Qwen2.5-1.5B-Instruct`  
 - **Method:** LoRA (PEFT adapters)  
 - **Hardware target:** CPU-only with 8GB of RAM  
 - **Dataset:** `Medical_QA_Dataset.csv` (publickly available on [Kaggle](https://www.kaggle.com/datasets/thedevastator/comprehensive-medical-q-a-dataset)) with columns:  
